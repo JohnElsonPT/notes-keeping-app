@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// to use these icon things from material-ui, you need to use the dependencies: material-ui/core and material-ui/icons 
+// to use these icon things from material-ui, you need to use the dependencies: material-ui/core and material-ui/icons
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 //Fab = floating action button from material-ui
 import Fab from '@material-ui/core/Fab';
@@ -40,9 +40,9 @@ function CreateArea(props) {
 
   return (
     <div>
-      <form className="create-note">
+      <form className="create-note" autocomplete="off">
       {/* below ands input for title of note when you click in text area, where content of note is typed */}
-      {isExpanded ? 
+      {isExpanded ?
         <input
           name="title"
           onChange={handleChange}
